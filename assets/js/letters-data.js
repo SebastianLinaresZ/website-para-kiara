@@ -17,17 +17,6 @@
       ].join('\n'),
       photos: ['assets/photo.jpg'],
     },
-    {
-      id: 'carta-2',
-      title: 'Hola, mi amor...',
-      createdAt: '2026-11-16T22:00:00',
-      text: [
-        'Hola, mi amor...',
-        'Solo queria recordarte lo especial que eres para mi y celebrar cada segundo que hemos compartido. Nuestro tiempo juntos ha sido un regalo maravilloso, lleno de risas, suenos y momentos que guardare por siempre en mi corazon.',
-        'Cada dia a tu lado es una nueva aventura y una razon para sonreir. Eres la luz que ilumina mis dias. Gracias por tanto amor. Te quiero muchisimo.',
-      ].join('\n'),
-      photos: ['assets/photo.jpg'],
-    },
   ];
 
   LOVE.lettersData = {
