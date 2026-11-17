@@ -187,6 +187,7 @@
         image.style.zIndex = String(index + 1);
 
         image.addEventListener('click', () => openLightbox(src));
+        image.addEventListener('error', () => image.remove());
         photosEl.appendChild(image);
       });
     }
