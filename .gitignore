@@ -1,0 +1,14 @@
+# carpetas de trabajo (no hacen falta para publicar)
+capturas/
+tools/
+_backup/
+_shots/
+.edge-profile*/
+
+# código original descargado de Dedicapag, solo como referencia
+original/
+
+# sistema
+.DS_Store
+Thumbs.db
+desktop.ini
