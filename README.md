@@ -40,16 +40,33 @@ Las cartas estan en `assets/js/letters-data.js` cada una es del formato
 El reproductor lo hice con un diseño de ventana flotante bastante simple y dinamico
 aunque me hubiera gustado que tuviera una zona especifica para la misma
 
-Deja los MP3 en `assets/music/` y añádelos a la lista en `assets/js/config.js`
+Deja los MP3 en `assets/` y añádelos a la lista en `assets/js/config.js`
 
 Se reproducen en ese orden y al acabar una pasa a la siguiente, volviendo a la
 primera al final
 
-## En GitHub Pages
+## En Netlify
 
-Si en caso deseas que la pagina sea indexada (Con derechos de autor) puedes eliminar en "noindex"
-asi google lo reconocera 
+La pagina no tiene build, asi que solo hay que conectar el repositorio:
 
-Tienes que editar justamente esto para que funcionen las imagenes de previsualización al compartir
-<meta property="og:image" content="https://TU-USUARIO.github.io/TU-REPO/assets/og-image.png">
-<meta name="twitter:image" content="https://TU-USUARIO.github.io/TU-REPO/assets/og-image.png">
+1. Entra en netlify.com → **Add new site** → **Import an existing project**
+2. Elige GitHub y el repositorio `website-para-kiara`
+3. Build command: vacio. Publish directory: `.` (ya viene en `netlify.toml`)
+4. **Deploy**. En un minuto la pagina esta en `https://algo.netlify.app`
+5. Si quieres un nombre mas bonito: **Site settings → Change site name**
+
+Cada `git push` a `main` vuelve a desplegar solo.
+
+Si en caso deseas que la pagina sea indexada (Con derechos de autor) puedes eliminar el "noindex"
+asi google lo reconocera
+
+Para que las imagenes de previsualización funcionen al compartir hay que poner la URL completa del sitio
+(ahora mismo apuntan a GitHub Pages):
+
+```html
+<meta property="og:image" content="https://TU-SITIO.netlify.app/assets/og-image.png">
+<meta name="twitter:image" content="https://TU-SITIO.netlify.app/assets/og-image.png">
+```
+
+Un detalle del plan gratis de Netlify: cada deploy a produccion gasta creditos
+(unos 20 al mes), asi que mejor agrupar los cambios en un push.
