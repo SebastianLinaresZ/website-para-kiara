@@ -215,10 +215,10 @@
         // si venía escapándose, se recoge antes de salir de la pregunta
         stopEscaping();
 
-        LOVE.store.answer(Date.now());
+        const startedAt = LOVE.store.answer();
         showScreen('tree');
 
-        if (typeof options.onAnswered === 'function') options.onAnswered();
+        if (typeof options.onAnswered === 'function') options.onAnswered(startedAt);
       });
     }
 

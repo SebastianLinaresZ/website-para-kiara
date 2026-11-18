@@ -1,3 +1,15 @@
 # Página estática: no hay build, se publica la raíz del repo tal cual.
 [build]
   publish = "."
+
+# La función vive en netlify/functions y responde en /api/state.
+# El redirect es un respaldo por si el enrutado automático no la pilla.
+[[redirects]]
+  from = "/api/state"
+  to = "/.netlify/functions/state"
+  status = 200
+
+[[redirects]]
+  from = "/api/state/*"
+  to = "/.netlify/functions/state"
+  status = 200

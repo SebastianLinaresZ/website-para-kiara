@@ -65,8 +65,13 @@ window.LOVE_CONFIG = {
   music: {
     volume: 0.15,
     tracks: [
-      { title: 'Corazón', src: 'assets/Corazón.mp3' },
-      { title: 'Volare', src: 'assets/Volare.mp3' },
+      { title: 'Danny Ocean - Crayola', src: 'assets/Danny Ocean - Crayola (VISUALIZER) - Danny Ocean.mp3' },
+      { title: 'Sabrinba Carpenter - Bed chem', src: 'assets/Sabrina Carpenter - Bed Chem (Official Lyric Video).mp3' },
+      { title: 'Bruno Mars - Marry You', src: 'assets/Bruno Mars - Marry You (Official Lyric Video).mp3' },
+      { title: 'Bruno Mars - Die With A Smile', src: 'assets/Die With A Smile (Live in Las Vegas).mp3' },
+      { title: 'Loco (Tu forma de ser)', src: 'assets/Loco (Tu Forma de Ser) (Remasterized 2001).mp3' },
+      { title: 'Jasiel Nuñez - Japón', src: 'assets/Japón.mp3' },
+      { title: 'El toro enamorado de la luna', src: 'assets/El toro enamorado de la luna.mp3' },
     ],
   },
 
